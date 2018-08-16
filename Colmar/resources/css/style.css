@@ -1,0 +1,569 @@
+/* universal */
+
+html {
+  max-width: 100%;
+  font-size: 16px;
+  align-self: center;
+}
+
+body {
+  max-width: 100%;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  font-family: "Alegreya Sans";
+}
+/*  header */
+
+.thebigone {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 100%;
+  height: 4rem;
+  background-color: rgb(131, 1, 26);
+  color: white;
+}
+
+header img {
+  filter: invert(100%);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+header nav ul {
+  display: flex;
+}
+
+.navigation-menu {
+position: relative;
+right: 16px;
+}
+
+.navigation-menu li {
+display: inline-flex;
+margin: auto 8px;
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation-menu ul {
+    display: none;
+  }
+
+  header .desktop {
+    display: none;
+}
+
+  header .mobile {
+    display: block;
+    width: 100%
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+}
+/* general body of content */
+
+li a {
+  color: white;
+}
+
+li a:hover {
+  color: black;
+}
+
+.largetext {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.smalltext {
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.bigbigtext {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 1.4px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: rgb(131, 1, 26);
+}
+
+/* jumbotron 1 */
+
+.textbox-jumbo1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  margin-right: 80px;
+  text-align: center;
+}
+
+.jumbotron-1 {
+  display: flex;
+  align-items: center;
+  background-color: rgba(141, 25, 47, 10%);
+  max-width: 100%;
+}
+
+.image-jumbo1 {
+  max-width: 60%;
+  margin: 32px 24px;
+}
+
+.jumbotron-1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.textbox-jumbo1 p {
+  font-size: 1.2em;
+  margin: 32px 0;
+}
+
+.jumbo1-paragraph {
+  font-size:
+}
+
+.link-jumbo1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 2px solid rgb(141, 25, 47);
+  padding: 8px 32px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.link-jumbo1:hover {
+  transform: scale(1.05);
+  background-color: rgb(131, 1, 26);
+}
+
+.link-jumbo1 a:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 1009px) {
+  .jumbotron-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .jumbotron-1 img {
+    width: 100%;
+  }
+
+  .image-jumbo1 {
+    margin: 0 0 32px 0;
+    max-width: 100%;
+  }
+
+  .textbox-jumbo1 {
+    margin: 0 1rem 2rem;
+  }
+
+  .textbox-jumbo1 p {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+}
+
+/* jumbotron 2 general */
+
+.jumbotron-2 {
+  display: inline-flex;
+  background-color: rgba(182, 2, 36, 12%);
+}
+
+/* jumbotron 2 1st column */
+
+.main-article {
+  max-width: 60%;
+  padding: 32px 24px;
+
+}
+
+.image-jumbo2 {
+  max-width: 100%;
+}
+
+.image-jumbo2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.textbox-jumbo2 h2 {
+  padding: 32px 0 24px 0;
+}
+
+.strategist {
+  margin-top: 32px;
+}
+
+/* jumbotron 2 2nd column */
+
+.general-articles-jumbo2 {
+
+  max-width: 40%;
+  padding-top: 16px;
+}
+
+.article-jumbo2 {
+  display: flex;
+  align-items: center;
+  padding: 16px 16px 16px 16px;
+  border: 1px solid rgb(131, 1, 26);
+  border-right-style: none;
+  border-left-style: none;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.article-jumbo2:hover {
+  color: white;
+  background-color: rgba(131, 1, 26, 90%);
+  transform: scale(1.1);
+}
+
+.text-column2 {
+  max-width: 65%;
+  padding-left: 32px;
+  margin-right: 24px;
+  text-align: left;
+}
+
+.text-column2 a {
+  color: blue;
+}
+
+.chosenone {
+  font-size: 1rem;
+}
+
+.article-jumbo2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.infoboxes {
+  max-width: 35%;
+  height: auto;
+}
+
+.words {
+  margin: 8px 0;
+}
+
+.wideview {
+  display: none;
+}
+
+@media only screen and (max-width: 1009px) {
+  .main-article,
+  .normalview {
+    display: none;
+}
+
+.jumbotron-2 {
+  display: flex;
+  max-width: 100%;
+}
+
+.wideview  {
+  display: flex;
+}
+
+.wideview2 {
+display: flex;
+  margin-top: 16px;
+}
+
+.text-column2 {
+  max-width: 100%;
+  font-size: 1.6rem;
+}
+
+.title-sub {
+  font-size: 1.6em;
+  margin-top: 2rem;
+}
+
+.infoboxes {
+display: flex;
+  max-width: 100%;
+  height: auto;
+}
+
+.article-jumbo2 {
+  flex-direction:column;
+  align-items: flex-start;
+  padding: 16px 16px 32px;
+}
+
+.wideview img {
+display: flex;
+  max-width: 100%;
+}
+
+.general-articles-jumbo2 {
+  max-width: 100%;
+  margin: 0;
+  flex: 1;
+}
+
+}
+/* jumbotron 3 */
+
+.jumbotron-3 {
+  background-color: rgba(194, 157, 164, 20%);
+}
+
+.sectionheading-jumbo3 {
+  display: flex;
+  justify-content: center;
+  padding: 32px 0;
+}
+
+.maincontainer-jumbo3 {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 0 56px 32px;
+  justify-content: center;
+}
+
+.row {
+  display: inline-flex;
+  max-width: 100%;
+}
+
+.majors {
+  max-width: 33.333%;
+  margin: 16px;
+  background-color: white;
+  border: 1px solid rgb(131, 1, 26);
+  transition: all 0.2s ease-in-out;
+}
+
+.majors:hover {
+  color: white;
+  background-color: rgba(131, 1, 26, 90%);
+  transform: scale(1.1);
+}
+
+.majors img {
+  max-width: 100%;
+  height: auto;
+}
+
+.title-jumbo3 {
+margin-bottom: 8px;
+}
+
+.textbox-jumbo3 {
+padding: 16px 16px 24px;
+}
+
+.textbox-jumbo3 p {
+  margin-top: 8px;
+}
+
+.chosentwo {
+  font-size: .9rem;
+}
+
+@media only screen and (max-width: 1009px) {
+  .textbox-jumbo3 .subtitle,
+  .textbox-jumbo3 p,
+  .majors img {
+    display: none;
+  }
+
+  .jumbotron-3 {
+    padding-bottom: 28px;
+  }
+
+  .sectionheading-jumbo3 {
+    padding-bottom: 0;
+  }
+
+  .maincontainer-jumbo3 {
+    width: 100%;
+    align-items: center;
+    margin: auto;
+  }
+
+  .largetext {
+    width: 100%;
+  }
+
+  .majors {
+    display: flex;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .title-jumbo3 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  .row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .textbox-jumbo3 {
+    margin: 4px 16px;
+    width: 100%;
+  }
+
+}
+/* jumbotron 4 */
+
+.jumbotron-4 {
+  background-color: rgba(153, 136, 139, 10%);
+}
+
+.sectionheading-jumbo4 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0 auto 32px;
+  border-top: 32px solid rgba(153, 136, 139, 1%);
+}
+
+.container4 {
+  display: inline-flex;
+}
+
+/* jumbotron 4 column 1 */
+
+.column1-jumbo4 {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  margin: 0 24px 32px;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.title-jumbo4 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 1009px) {
+  .column2-jumbo4,
+  .textbox-col1-jumbo4 {
+    display: none;
+  }
+
+  .column1-jumbo4 {
+    margin: 0 0 24px;
+    max-width: 100%;
+  }
+
+  .sectionheading-jumbo4 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+}
+
+/* jumbotron 4 column 2 */
+
+.column2-jumbo4 {
+  max-width: 40%;
+}
+
+.article-jumbo4 img {
+  max-width: 35%;
+  height: auto;
+}
+
+.article-jumbo4 {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid rgb(131, 1, 26);
+  border-right-style: none;
+  border-left-style: none;
+  padding: 16px 0 16px 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+.article-jumbo4:hover {
+  color: white;
+  background-color: rgba(131, 1, 26, 90%);
+  transform: scale(1.1);
+}
+
+.text4-column2 {
+  max-width: 65%;
+  margin-left: 16px;
+  margin-right: 24px;
+}
+
+.words4 {
+  margin: 8px 0;
+}
+
+/* footer */
+
+footer {
+  display: inline-flex;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 16px 24px 32px 24px;
+  background-color: rgb(131, 1, 26);
+  color: white;
+}
+
+footer li {
+  display: inline-flex;
+  justify-content: flex-end;
+  padding-right: 8px;
+}
+
+@media only screen and (max-width: 1009px) {
+  footer {
+    padding-bottom: 16px;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+}
